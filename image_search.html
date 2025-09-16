@@ -12,7 +12,7 @@
       }
       .header {
         display: flex;
-        justify-content: flex-end;
+        justify-content: end;
         gap: 20px;
         padding: 10px;
         background-color: #f0f0f0;
@@ -45,15 +45,14 @@
       }
 
       .search-form input[type="submit"] {
-        width: 200px;
-        padding: 10px;
+        margin-top: 15px;
+        padding: 10px 30px;
         font-size: 16px;
         border: 24px;
         border: none;
         background-color: #0073e6;
         color: white;
         cursor: pointer;
-        margin: 10px;
         border-radius: 5px;
       }
     </style>
@@ -61,21 +60,16 @@
 
   <body>
     <div class="header">
-      <a href="image_search.html">Image Search</a>
-      <a href="advanced_search.html">Advanced Search</a>
+      <a href="index.html">Google Search</a>
     </div>
-
 
     <div class="search-form">
       <form action="https://www.google.com/search" target="_blank">
         <input type="text" name="q">
-        <input type="submit" value="Google Search">
-        <input type="submit" name="btnI" value="I'm feeling lucky">
+        <input type="hidden" name="tbm" value="isch">
+        <input type="submit" value="Image Search">
       </form>
     </div>
-
-
-
 
   </body>
 

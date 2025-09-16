@@ -28,54 +28,58 @@
         color: rgb(165, 44, 44);
       }
 
-      .search-form  form {
+      .search-form {
+        margin: 50px auto;
+        width: 400px;
+      }
+
+      .search-form form {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
+        gap: 15px;
       }
 
       .search-form input[type="text"] {
-        width: 400px;
-        padding: 10px 15px;
-        font-size: 18px;
-        border-radius: 24px;
+        padding: 10px;
+        font-size: 16px;
         border: 1px solid #dcdcdc;
-        outline: none;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       .search-form input[type="submit"] {
-        width: 200px;
-        padding: 10px;
+        padding: 16px;
         font-size: 16px;
-        border: 24px;
+        border-radius: 4px;
         border: none;
-        background-color: #0073e6;
+        background-color: #1a73e8;
         color: white;
         cursor: pointer;
-        margin: 10px;
-        border-radius: 5px;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .search-form input[type="submit"]:hover {
+        background-color: #1558b0;
       }
     </style>
   </head>
 
   <body>
     <div class="header">
-      <a href="image_search.html">Image Search</a>
-      <a href="advanced_search.html">Advanced Search</a>
+      <a href="index.html">Google Search</a>
     </div>
-
 
     <div class="search-form">
       <form action="https://www.google.com/search" target="_blank">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-        <input type="submit" name="btnI" value="I'm feeling lucky">
+        <input type="text" name="as_q" placeholder="All words">
+        <input type="text" name="as_epq" placeholder="Exact phrase">
+        <input type="text" name="as_oq" placeholder="Any of these words">
+        <input type="text" name="as_eq" placeholder="Exclude these words">
+        <input type="submit" value="Advanced Search">
       </form>
     </div>
-
-
-
 
   </body>
 
